@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manan Singh Maggo - Resume</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 20px;
+            background-color: #e9ecef;
+        }
+
+        .controls {
+            text-align: right;
+            margin-bottom: 15px;
+        }
+
+        #download-btn {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        #download-btn:hover {
+            background-color: #0056b3;
+        }
+
+        .resume-container {
+            background: #fff;
+            padding: 50px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+
+        header {
+            text-align: center;
+            border-bottom: 2px solid #222;
+            padding-bottom: 20px;
+            margin-bottom: 25px;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2.2em;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .contact-info {
+            margin-top: 10px;
+            font-size: 0.95em;
+        }
+
+        section {
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 5px;
+            font-size: 1.1em;
+            text-transform: uppercase;
+            color: #2c3e50;
+        }
+
+        ul {
+            list-style-type: square;
+            margin-left: 20px;
+        }
+
+        .project-title {
+            font-weight: bold;
+            color: #333;
+        }
+
+        .edu-item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 8px;
+        }
+
+        #btn {
+            text-decoration: none;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="controls">
+        <button id="download-btn">Download PDF</button>
+        <button id="download-btn"><a id="btn" href="index.html">Go Back</a></button>
+    </div>
+
+    <div id="resume-content" class="resume-container">
+        <header>
+            <h1>Manan Singh Maggo</h1>
+            <div class="contact-info">
+                +91 9958512646 | maggomanansingh@gmail.com <br>
+                Vasundhara, Ghaziabad, Uttar Pradesh, India <br>
+                <a href="https://www.linkedin.com/in/manan-singh-maggo">linkedin.com/in/manan-singh-maggo</a>
+            </div>
+        </header>
+
+        <section>
+            <h2>Career Objective</h2>
+            <p>To apply my expertise in ethical hacking and full-stack development, specifically Kali Linux and MERN Stack, to contribute to a forward-thinking company and drive innovation within a collaborative team. </p>
+        </section>
+
+        <section>
+            <h2>Skills & Abilities</h2>
+            <ul>
+                <li><strong>Programming Languages:</strong> C | Python | C++ | Java Script | Node.js | JAVA </li>
+                <li><strong>DSA:</strong> Data Structures and Algorithms </li>
+                <li><strong>Cyber Security:</strong> Kali Linux, Web Jacking, Android Hacking, Phishing attacks </li>
+                <li><strong>Web Development:</strong> MERN Stack </li>
+                <li><strong>Fundamentals:</strong> Software development & Machine Learning </li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Education</h2>
+            <div class="edu-item">
+                <span><strong>Dr. APJ Abdul Kalam Technical University</strong>, Ajay Kumar Garg Engg. College, India</span>
+                <span>2028</span>
+            </div>
+            <div class="edu-item">
+                <span><strong>CBSE</strong>, D.A.V Public School, India</span>
+                <span>2023</span>
+            </div>
+        </section>
+
+        <section>
+            <h2>Projects & Research</h2>
+            <ul>
+                <li><span class="project-title">Smart Waste Management System with Advanced IoT (Software & Hardware):</span> Designed a new IoT based module for garbage bins which can communicate over kilometers without Wi-Fi/Bluetooth and smart algorithmic system that can assign the nearest worker to bins and also provide the optimized route to bin (<a href="https://smart-waste-web-glpp.onrender.com">https://smart-waste-web-glpp.onrender.com</a>). </li>
+                <li><span class="project-title">Self-Portfolio (Frontend):</span> A basic Frontend web-site made to give my information to all the users with the link of my site (<a href="https://portfolio-pwik.onrender.com">https://portfolio-pwik.onrender.com</a>). </li>
+                <li><span class="project-title">College Geeks (React):</span> A basic React.js based web-site made for college students with basic information about their prior subjects (<a href="https://college-geeks.onrender.com/College_Geeks.html">https://college-geeks.onrender.com/College_Geeks.html</a>). </li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Interpersonal Skills</h2>
+            <ul>
+                <li>Good Communication Skills. </li>
+                <li>Easily negotiate with other people. </li>
+                <li>Have high level of persuasiveness. </li>
+                <li>Ability to cope up with difficult situations. </li>
+                <li>Confident and Determined. </li>
+            </ul>
+        </section>
+    </div>
+
+    <script>
+        document.getElementById('download-btn').addEventListener('click', function () {
+            const element = document.getElementById('resume-content');
+            const opt = {
+                margin: 0.5,
+                filename: 'Manan_Singh_Maggo_Resume.pdf',
+                image: { type: 'jpeg', quality: 0.98 },
+                html2canvas: { scale: 2 },
+                jsPDF: { unit: 'in', format: 'letter', orientation: 'portrait' }
+            };
+
+            // New Promise-based usage:
+            html2pdf().set(opt).from(element).save();
+        });
+    </script>
+</body>
+
+</html>
