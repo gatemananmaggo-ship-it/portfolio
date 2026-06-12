@@ -67,8 +67,10 @@
                     <div class="card-image">
                         <img src="SWMS.png" alt="Smart Waste Management System">
                         <div class="card-overlay">
-                            <p>IoT-based bin monitoring using HC-SR04 sensors &amp; LoRaWAN with OSRM route optimization to cut costs &amp; emissions.</p>
-                            <a href="https://smart-waste-web-glpp.onrender.com/" target="_blank" rel="noopener noreferrer" class="overlay-btn">View Live &rarr;</a>
+                            <p>IoT-based bin monitoring using HC-SR04 sensors &amp; LoRaWAN with OSRM route optimization
+                                to cut costs &amp; emissions.</p>
+                            <a href="https://smart-waste-web-glpp.onrender.com/" target="_blank"
+                                rel="noopener noreferrer" class="overlay-btn">View Live &rarr;</a>
                         </div>
                     </div>
                     <div class="card-body">
@@ -80,7 +82,9 @@
                             <span class="tag tag-web">Dashboard</span>
                         </div>
                         <div class="card-actions">
-                            <a href="https://smart-waste-web-glpp.onrender.com/" target="_blank" rel="noopener noreferrer" class="card-link-btn"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+                            <a href="https://smart-waste-web-glpp.onrender.com/" target="_blank"
+                                rel="noopener noreferrer" class="card-link-btn"><i
+                                    class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
                         </div>
                     </div>
                 </div>
@@ -90,8 +94,10 @@
                     <div class="card-image">
                         <img src="colege_geeks.png" alt="College Geeks">
                         <div class="card-overlay">
-                            <p>Educational platform for CSE students with structured learning across core CS &amp; Engineering subjects.</p>
-                            <a href="https://college-geeks.onrender.com/College_Geeks.html" target="_blank" rel="noopener noreferrer" class="overlay-btn">View Live &rarr;</a>
+                            <p>Educational platform for CSE students with structured learning across core CS &amp;
+                                Engineering subjects.</p>
+                            <a href="https://college-geeks.onrender.com/College_Geeks.html" target="_blank"
+                                rel="noopener noreferrer" class="overlay-btn">View Live &rarr;</a>
                         </div>
                     </div>
                     <div class="card-body">
@@ -103,7 +109,9 @@
                             <span class="tag tag-web">Education</span>
                         </div>
                         <div class="card-actions">
-                            <a href="https://college-geeks.onrender.com/College_Geeks.html" target="_blank" rel="noopener noreferrer" class="card-link-btn"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+                            <a href="https://college-geeks.onrender.com/College_Geeks.html" target="_blank"
+                                rel="noopener noreferrer" class="card-link-btn"><i
+                                    class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
                         </div>
                     </div>
                 </div>
@@ -113,7 +121,8 @@
                     <div class="card-image card-image--contain">
                         <img src="game.png" alt="Flappy Bird Game">
                         <div class="card-overlay">
-                            <p>Side-scrolling arcade game where you navigate a bird through pipe gaps &mdash; built from scratch with pure JS &amp; Canvas.</p>
+                            <p>Side-scrolling arcade game where you navigate a bird through pipe gaps &mdash; built from
+                                scratch with pure JS &amp; Canvas.</p>
                         </div>
                     </div>
                     <div class="card-body">
@@ -131,7 +140,8 @@
                     <div class="card-image">
                         <img src="unit.png" alt="Length Unit Converter">
                         <div class="card-overlay">
-                            <p>Quick &amp; accurate length conversions between Metric and Imperial systems, eliminating manual calculation errors.</p>
+                            <p>Quick &amp; accurate length conversions between Metric and Imperial systems, eliminating
+                                manual calculation errors.</p>
                         </div>
                     </div>
                     <div class="card-body">
@@ -222,10 +232,10 @@
                 const rect = card.getBoundingClientRect();
                 const x = e.clientX - rect.left;
                 const y = e.clientY - rect.top;
-                const cx = rect.width  / 2;
+                const cx = rect.width / 2;
                 const cy = rect.height / 2;
                 const rotateX = ((y - cy) / cy) * -8;
-                const rotateY = ((x - cx) / cx) *  8;
+                const rotateY = ((x - cx) / cx) * 8;
                 card.style.transform = `perspective(800px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale(1.03)`;
             });
             card.addEventListener('mouseleave', () => {

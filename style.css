@@ -209,6 +209,7 @@ nav ul li a {
     transform: translateY(40px);
     transition: opacity 0.6s ease, transform 0.6s ease;
 }
+
 .reveal.visible {
     opacity: 1;
     transform: translateY(0);
@@ -319,10 +320,29 @@ nav ul li a {
     text-transform: uppercase;
 }
 
-.tag-web  { background: rgba(37, 99, 235, 0.15);  color: #1d4ed8; border: 1px solid rgba(37, 99, 235, 0.35); }
-.tag-iot  { background: rgba(5, 150, 105, 0.15);  color: #065f46; border: 1px solid rgba(5, 150, 105, 0.35); }
-.tag-game { background: rgba(180, 120, 0, 0.15);   color: #92400e; border: 1px solid rgba(180, 120, 0, 0.35); }
-.tag-tool { background: rgba(109, 40, 217, 0.15);  color: #4c1d95; border: 1px solid rgba(109, 40, 217, 0.35); }
+.tag-web {
+    background: rgba(37, 99, 235, 0.15);
+    color: #1d4ed8;
+    border: 1px solid rgba(37, 99, 235, 0.35);
+}
+
+.tag-iot {
+    background: rgba(5, 150, 105, 0.15);
+    color: #065f46;
+    border: 1px solid rgba(5, 150, 105, 0.35);
+}
+
+.tag-game {
+    background: rgba(180, 120, 0, 0.15);
+    color: #92400e;
+    border: 1px solid rgba(180, 120, 0, 0.35);
+}
+
+.tag-tool {
+    background: rgba(109, 40, 217, 0.15);
+    color: #4c1d95;
+    border: 1px solid rgba(109, 40, 217, 0.35);
+}
 
 /* Card action links */
 .card-actions {
@@ -407,4 +427,4 @@ nav ul li a {
     .card-image {
         height: 180px;
     }
-}
+}
