@@ -48,84 +48,103 @@
         </section>
 
         <section class="projects" id="projects">
-
-            <!-- Smart Waste ManagementSystem -->
-            <div class="project">
-                <div class="project-img">
-                    <img src="SWMS.png" alt="webpage image">
+            <div class="projects-header">
+                <h2 class="section-title">My Projects</h2>
+                <p class="section-subtitle">Things I've built &amp; shipped</p>
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="iot">IoT</button>
+                    <button class="filter-btn" data-filter="web">Web</button>
+                    <button class="filter-btn" data-filter="game">Game</button>
+                    <button class="filter-btn" data-filter="tool">Tool</button>
                 </div>
-                <div class="project-info">
-                    <div class="text" id="Headin">Smart Waste Management System Dashboard</div>
-                    <p class="text" id="para">
-                        The invention Smart Waste Management System is an IoT-based module which utilizes HC-SR04 ultrasonic sensor to monitor the exact fill level of garbage bins in real-time. With the help of Transceiver LoRa WAN (Transmits and Receive the data over frequencies like 433, 865 & 867 MHz in India), it transmits the most precise fill level of bin data to a centralized hub (admin dashboard) without even costing any transmission charges. This system maps the most optimized garbage collection routes by using OSRM (Open Source Routing Machine), which ensures preventing overflowing of garbage bins, ensures the public hygiene and resource management. The unique combination of low-power and secure transmission of data and effective routing exponentially reduces the operational cost and carbon emission.
-                    </p>
-                    <div class="button-container"><button class="btn"><a
-                                href="https://smart-waste-web-glpp.onrender.com/" target="_blank"
-                                rel="noopener noreferrer">Go to webpage</a></button>
+            </div>
+
+            <div class="projects-grid">
+
+                <!-- Smart Waste Management System -->
+                <div class="project-card reveal" data-category="iot web">
+                    <div class="card-image">
+                        <img src="SWMS.png" alt="Smart Waste Management System">
+                        <div class="card-overlay">
+                            <p>IoT-based bin monitoring using HC-SR04 sensors &amp; LoRaWAN with OSRM route optimization to cut costs &amp; emissions.</p>
+                            <a href="https://smart-waste-web-glpp.onrender.com/" target="_blank" rel="noopener noreferrer" class="overlay-btn">View Live &rarr;</a>
+                        </div>
                     </div>
-
-                </div>
-            </div>
-            
-            <!-- College_geeks -->
-            <div class="project">
-                <div class="project-img">
-                    <img src="colege_geeks.png" alt="webpage image">
-                </div>
-                <div class="project-info">
-                    <div class="text" id="Headin">This is a Educational WebSite</div>
-                    <p class="text" id="para">
-                        The website College Geeks is an educational platform designed for college students, primarily
-                        focusing on core Computer Science and Engineering subjects. It serves as a central hub for
-                        learning materials, providing structured information across several specialized domains.
-                    </p>
-                    <div class="button-container"><button class="btn"><a
-                                href="https://college-geeks.onrender.com/College_Geeks.html" target="_blank"
-                                rel="noopener noreferrer">Go to webpage</a></button>
+                    <div class="card-body">
+                        <h3 class="card-title">Smart Waste Management System</h3>
+                        <div class="tech-tags">
+                            <span class="tag tag-iot">IoT</span>
+                            <span class="tag tag-web">LoRaWAN</span>
+                            <span class="tag tag-tool">OSRM</span>
+                            <span class="tag tag-web">Dashboard</span>
+                        </div>
+                        <div class="card-actions">
+                            <a href="https://smart-waste-web-glpp.onrender.com/" target="_blank" rel="noopener noreferrer" class="card-link-btn"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+                        </div>
                     </div>
-
                 </div>
-            </div>
 
-            <!-- Flappy Bird game -->
-            <div class="project">
-                <div class="project-img">
-                    <img id="project-2" src="game.png" alt="webpage image">
+                <!-- College Geeks -->
+                <div class="project-card reveal" data-category="web">
+                    <div class="card-image">
+                        <img src="colege_geeks.png" alt="College Geeks">
+                        <div class="card-overlay">
+                            <p>Educational platform for CSE students with structured learning across core CS &amp; Engineering subjects.</p>
+                            <a href="https://college-geeks.onrender.com/College_Geeks.html" target="_blank" rel="noopener noreferrer" class="overlay-btn">View Live &rarr;</a>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">College Geeks</h3>
+                        <div class="tech-tags">
+                            <span class="tag tag-web">HTML</span>
+                            <span class="tag tag-web">CSS</span>
+                            <span class="tag tag-tool">JavaScript</span>
+                            <span class="tag tag-web">Education</span>
+                        </div>
+                        <div class="card-actions">
+                            <a href="https://college-geeks.onrender.com/College_Geeks.html" target="_blank" rel="noopener noreferrer" class="card-link-btn"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="project-info">
-                    <div class="text" id="Headin">This is Flappy Bird Game</div>
-                    <p class="text" id="para">
-                        A Flappy Bird-style game is a side-scrolling arcade game where you navigate a bird through gaps
-                        between vertical pipes. If you are describing a version you created, it typically features these
-                        core elements
-                    </p>
-                    <!-- <div class="button-container"><button class="btn"><a
-                                href="https://college-geeks.onrender.com/College_Geeks.html" target="_blank"
-                                rel="noopener noreferrer">Go to webpage</a></button>
-                    </div> -->
 
+                <!-- Flappy Bird Game -->
+                <div class="project-card reveal" data-category="game">
+                    <div class="card-image card-image--contain">
+                        <img src="game.png" alt="Flappy Bird Game">
+                        <div class="card-overlay">
+                            <p>Side-scrolling arcade game where you navigate a bird through pipe gaps &mdash; built from scratch with pure JS &amp; Canvas.</p>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Flappy Bird Game</h3>
+                        <div class="tech-tags">
+                            <span class="tag tag-tool">JavaScript</span>
+                            <span class="tag tag-game">Canvas API</span>
+                            <span class="tag tag-game">Game Dev</span>
+                        </div>
+                    </div>
                 </div>
-            </div>
 
-            <!-- Unit Converter -->
-            <div class="project">
-                <div class="project-img">
-                    <img height="300" src="unit.png" alt="webpage image">
+                <!-- Unit Converter -->
+                <div class="project-card reveal" data-category="tool">
+                    <div class="card-image">
+                        <img src="unit.png" alt="Length Unit Converter">
+                        <div class="card-overlay">
+                            <p>Quick &amp; accurate length conversions between Metric and Imperial systems, eliminating manual calculation errors.</p>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Length Unit Converter</h3>
+                        <div class="tech-tags">
+                            <span class="tag tag-web">HTML</span>
+                            <span class="tag tag-web">CSS</span>
+                            <span class="tag tag-tool">JavaScript</span>
+                            <span class="tag tag-tool">Tool</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="project-info">
-                    <div class="text" id="Headin">This is a Length units converter</div>
-                    <p class="text" id="para">
-                        This application provides a user-friendly interface to perform quick and accurate conversions
-                        across various length systems, such as the Metric system (meters, centimeters, kilometers) and
-                        the Imperial system (inches, feet, miles). It is designed to eliminate the need for manual
-                        calculations and potential human error.
-                    </p>
-                    <!-- <div class="button-container"><button class="btn"><a
-                                href="https://college-geeks.onrender.com/College_Geeks.html" target="_blank"
-                                rel="noopener noreferrer">Go to webpage</a></button>
-                    </div> -->
 
-                </div>
             </div>
         </section>
     </main>
@@ -135,46 +154,84 @@
     </footer>
 
     <script>
+        // ── Typing animation ──────────────────────────────────────────
         const typingTextElement = document.getElementById('typing-text');
-    const words = ["Developer", "Ethical Hacker","Web Developer","Problem Solver", "Tech Innovator"];
-    let wordIndex = 0;
-    let charIndex = 0;
-    let isDeleting = false;
-    let typingSpeed = 100;
+        const words = ["Developer", "Ethical Hacker", "Web Developer", "Problem Solver", "Tech Innovator"];
+        let wordIndex = 0, charIndex = 0, isDeleting = false, typingSpeed = 100;
 
-    function type() {
-        const currentWord = words[wordIndex];
-        
-        if (isDeleting) {
-            // Delete characters
-            typingTextElement.textContent = currentWord.substring(0, charIndex - 1);
-            charIndex--;
-            typingSpeed = 50; // Deleting is faster
-        } else {
-            // Write characters
-            typingTextElement.textContent = currentWord.substring(0, charIndex + 1);
-            charIndex++;
-            typingSpeed = 150; // Normal typing speed
+        function type() {
+            const currentWord = words[wordIndex];
+            if (isDeleting) {
+                typingTextElement.textContent = currentWord.substring(0, charIndex - 1);
+                charIndex--;
+                typingSpeed = 50;
+            } else {
+                typingTextElement.textContent = currentWord.substring(0, charIndex + 1);
+                charIndex++;
+                typingSpeed = 150;
+            }
+            if (!isDeleting && charIndex === currentWord.length) {
+                typingSpeed = 2000; isDeleting = true;
+            } else if (isDeleting && charIndex === 0) {
+                isDeleting = false;
+                wordIndex = (wordIndex + 1) % words.length;
+                typingSpeed = 500;
+            }
+            setTimeout(type, typingSpeed);
         }
+        if (typingTextElement) type();
 
-        // Word completed
-        if (!isDeleting && charIndex === currentWord.length) {
-            // Wait at the end of word
-            typingSpeed = 2000;
-            isDeleting = true;
-        } else if (isDeleting && charIndex === 0) {
-            isDeleting = false;
-            // Move to next word
-            wordIndex = (wordIndex + 1) % words.length;
-            typingSpeed = 500; // Small break before typing next word
-        }
+        // ── Project filter ────────────────────────────────────────────
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const cards = document.querySelectorAll('.project-card');
 
-        setTimeout(type, typingSpeed);
-    }
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                filterBtns.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                const filter = btn.dataset.filter;
+                cards.forEach(card => {
+                    const cats = card.dataset.category;
+                    const show = filter === 'all' || cats.includes(filter);
+                    if (show) {
+                        card.style.display = 'flex';
+                        // re-trigger reveal animation
+                        card.classList.remove('visible');
+                        requestAnimationFrame(() => requestAnimationFrame(() => card.classList.add('visible')));
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        });
 
-    if (typingTextElement) {
-        type();
-    }
+        // ── Scroll reveal ─────────────────────────────────────────────
+        const revealObserver = new IntersectionObserver((entries) => {
+            entries.forEach(e => {
+                if (e.isIntersecting) {
+                    e.target.classList.add('visible');
+                    revealObserver.unobserve(e.target);
+                }
+            });
+        }, { threshold: 0.15 });
+        document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+
+        // ── 3-D tilt effect ───────────────────────────────────────────
+        document.querySelectorAll('.project-card').forEach(card => {
+            card.addEventListener('mousemove', e => {
+                const rect = card.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+                const cx = rect.width  / 2;
+                const cy = rect.height / 2;
+                const rotateX = ((y - cy) / cy) * -8;
+                const rotateY = ((x - cx) / cx) *  8;
+                card.style.transform = `perspective(800px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale(1.03)`;
+            });
+            card.addEventListener('mouseleave', () => {
+                card.style.transform = 'perspective(800px) rotateX(0deg) rotateY(0deg) scale(1)';
+            });
+        });
     </script>
 </body>
 
