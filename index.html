@@ -4,13 +4,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/38de7e2723.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/38de7e2723.js" crossorigin="anonymous" defer></script>
     <title>Manan Singh Maggo | Portfolio</title>
+    <meta name="description" content="Portfolio of Manan Singh Maggo showcasing projects, bio, and contact information.">
+    <meta http-equiv="Cache-Control" content="max-age=31536000, immutable">
+    <style>
+    /* Critical CSS */
+    nav{background:var(--gradient-nav);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border-bottom:1px solid var(--border-card);color:var(--text-primary);padding:18px 30px;position:fixed;width:100%;z-index:1000;display:flex;justify-content:space-around;align-items:center;}
+    .logo{font-size:24px;font-weight:800;letter-spacing:-0.5px;}
+    .hero{background:var(--gradient-hero);min-height:100vh;padding-top:80px;display:flex;justify-content:center;gap:100px;align-items:center;position:relative;overflow:hidden;}
+    .hero-left .one{font-size:58px;font-weight:800;line-height:1.15;letter-spacing:-1.5px;color:var(--text-primary);margin-bottom:16px;}
+    .hero-left .two{font-size:24px;font-weight:500;color:var(--text-secondary);margin-bottom:30px;}
+    .btn{padding:12px 28px;background:var(--gradient-accent);color:#fff;border:none;border-radius:50px;font-size:15px;font-weight:600;cursor:pointer;box-shadow:0 4px 15px var(--accent-glow);}
+    .filter-btn{padding:8px 24px;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.1);border-radius:50px;color:var(--text-secondary);font-size:14px;cursor:pointer;}
+    </style>
+    <meta name="author" content="Manan Singh Maggo">
+    <meta name="keywords" content="Manan Singh Maggo, portfolio, developer, ethical hacker, full-stack, MERN, Python, JavaScript, IoT, game development, Flappy Bird, Length Unit Converter, Smart Waste Management, College Geeks, resume">
+    <link rel="canonical" href="index.html">
+    <meta property="og:title" content="Manan Singh Maggo - Portfolio">
+    <meta property="og:description" content="Portfolio of Manan Singh Maggo showcasing projects, bio, and contact information.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="index.html">
+    <meta property="og:image" content="manan3.jpg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="preload" as="style" href="style.css">
+<link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="https://img.icons8.com/?size=100&id=103809&format=png&color=000000"
         type="image/x-icon">
 </head>
@@ -22,14 +43,12 @@
                 Manan's Portfolio </a>
         </div>
         <ul>
-            <li><a href="index.html"><i class="fas fa-house-user fa-flip" style="color: #ffffff;"></i>Home</a></li>
-            <li><a href="#projects"><i class="fa-solid fa-diagram-project fa-beat"
-                        style="color: #ffffff;"></i>Projects</a></li>
-            <li><a href="resume.html"><i class="fa-solid fa-address-card fa-fade" style="color: #ffffff;"></i>Resume</a>
-            </li>
-            <li><a href="mailto:maggomanansingh@email.com"><i class="fa-solid fa-envelope fa-shake"
-                        style="color: #ffffff;"></i>Contact</a></li>
-        </ul>
+    <li><a href="index.html"><i class="fas fa-house-user fa-flip" style="color: #ffffff;"></i>Home</a></li>
+    <li><a href="about.html"><i class="fa-solid fa-user" style="color: #ffffff;"></i>About</a></li>
+    <li><a href="#projects"><i class="fa-solid fa-diagram-project fa-beat" style="color: #ffffff;"></i>Projects</a></li>
+    <li><a href="resume.html"><i class="fa-solid fa-address-card fa-fade" style="color: #ffffff;"></i>Resume</a></li>
+    <li><a href="mailto:maggomanansingh@email.com"><i class="fa-solid fa-envelope fa-shake" style="color: #ffffff;"></i>Contact</a></li>
+</ul>
     </nav>
 
     <main>
@@ -43,7 +62,7 @@
                 </div>
             </div>
             <div class="hero-right">
-                <img height="400" src="manan3.jpg" alt="manan's image">
+                <img height="400" src="manan3.jpg" alt="manan's image" loading="lazy">
             </div>
 
         </section>
@@ -66,7 +85,7 @@
                 <!-- Smart Waste Management System -->
                 <div class="project-card reveal" data-category="iot web">
                     <div class="card-image">
-                        <img src="SWMS.png" alt="Smart Waste Management System">
+                        <img src="SWMS.png" alt="Smart Waste Management System" loading="lazy">
                         <div class="card-overlay">
                             <p>IoT-based bin monitoring using HC-SR04 sensors &amp; LoRaWAN with OSRM route optimization
                                 to cut costs &amp; emissions.</p>
@@ -93,7 +112,7 @@
                 <!-- College Geeks -->
                 <div class="project-card reveal" data-category="web">
                     <div class="card-image">
-                        <img src="colege_geeks.png" alt="College Geeks">
+                        <img src="colege_geeks.png" alt="College Geeks" loading="lazy">
                         <div class="card-overlay">
                             <p>Educational platform for CSE students with structured learning across core CS &amp;
                                 Engineering subjects.</p>
@@ -120,7 +139,7 @@
                 <!-- Flappy Bird Game -->
                 <div class="project-card reveal" data-category="game">
                     <div class="card-image card-image--contain">
-                        <img src="game.png" alt="Flappy Bird Game">
+                        <img src="game.png" alt="Flappy Bird Game" loading="lazy">
                         <div class="card-overlay">
                             <p>Side-scrolling arcade game where you navigate a bird through pipe gaps &mdash; built from
                                 scratch with pure JS &amp; Canvas.</p>
@@ -139,7 +158,7 @@
                 <!-- Unit Converter -->
                 <div class="project-card reveal" data-category="tool">
                     <div class="card-image">
-                        <img src="unit.png" alt="Length Unit Converter">
+                        <img src="unit.png" alt="Length Unit Converter" loading="lazy">
                         <div class="card-overlay">
                             <p>Quick &amp; accurate length conversions between Metric and Imperial systems, eliminating
                                 manual calculation errors.</p>
